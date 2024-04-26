@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Budgeting website</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Advanced Budgeting</title>
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1> Budgeting App</h1>
+
+  </header>
+
+  <img src="https://i.postimg.cc/Jznhx87Z/20240425-110302.png" class="CenterImage" height="150">
+
+  <img src="https://i.postimg.cc/C5ShqT6Z/received-414612461512546-removebg-preview.png" class="rightImage" height="100">
+
+  <main>
+
+    <section id="budget-form">
+
+      <label for="income">Income:</label>
+
+      <input type="number" id="income" placeholder="Enter your monthly income">
+
+      <label for="expenses">Expenses:</label>
+
+      <div id="expense-list">
+
+        <div class="expense-input">
+
+          <input type="text" class="expense-name" placeholder="Expense name" pattern="[A-Za-z]+" title="Please enter only letters">
+
+          <input type="number" class="expense-amount" placeholder="Amount">
+
+        </div>
+
+      </div>
+
+      <button onclick="addExpense()">Add Expense</button>
+
+      <button onclick="calculateBudget()">Calculate Budget</button>
+
+      <button onclick="clearBudgetBreakdowns()">Clear Budget Breakdowns</button>
+
+    </section>
+
+    <section id="budget-result">
+
+      <h2>Your Budget Breakdown:</h2>
+
+      <ul id="budget-breakdown"></ul>
+
+    </section>
+
+  </main>
+
+  <section id="calendar-section">
+
+    <label for="month-year">Select Month and Year:</label>
+
+    <input type="month" id="month-year" onchange="filterByMonth()">
+
+    <button onclick="showAll()">Show All</button>
+
+  </section>
+
+  <script src="script.js">
+
+  </script>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
